@@ -1,0 +1,18 @@
+{
+  "name": "__MSG_QUASAR_NAME__",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "description": "__MSG_QUASAR_DESCRIPTION__",
+  "content_scripts": [ {
+    "matches": [ "*://*/*" ],
+    "js": ["scripts/jquery-1.10.2.min.js","scripts/redmine.js"]
+  } ],
+  "icons": {
+    "48": "images/128.png",
+    "128": "images/128.png"
+  },
+  "permissions": [ "*://*/*" ],
+  "web_accessible_resources": [ "*" ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'"
+}
